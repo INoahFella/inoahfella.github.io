@@ -7,25 +7,25 @@
 body{
 	font-weight: 400;
 	margin: 0;
-	color: #090909;
-	background-color: #FEF5EF;
+	color: #14110F;
+	background-color: white;
 }
 #wrapper{
-	margin: 0;
-	height: 7rem;;
-	background-color: #9D5C63;
+	margin: 0 auto;
+	height: 4.5rem;;
+	background-color: #14110F;
 	text-align: center;
-	padding: 30px;
+	padding: 1vw;
+
 	position: sticky;
 	top: 0; /*required for sticky property*/
 	z-index: 1;
-	
 }
 #logo{
 	
-	width:5%;
+	width:3%;
 	float: left;
-	padding-bottom: 40px;	
+	 /*margin-bottom: 2vw;*/	
 }
 
 #links{
@@ -37,19 +37,20 @@ body{
 	background-clip: padding-box;
 	background-size: 20%;
 	border-radius: 8px 8px 8px 8px;
-	width:15rem;
-	color: #090909;
+	width:12rem;
+	color: #7681B3;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 20px;
+	transition: color 0.4s;
 	transition: background-color 0.4s;/*transitions are needed on both ends in order for things to revert back to baseline smoothly */
 
 }
 #links a:hover{
-	cursor: pointer;
-	color: #584B53;
-	transition: 0.4s;
-	box-shadow: 0px 10px 8px #584B53;/*transitions are needed on both ends in order for things to revert back to baseline smoothly */
-	background-color: #FEF5EF;	
+	/*cursor: pointer;*/
+	color: #E6E6E6;
+	transition: color 0.4s;
+	transition: 0.4s;/*transitions are needed on both ends in order for things to revert back to baseline smoothly */
+	background-color: #7681B3;	
 }
 #intro{
 	background-image: url(images/mehighres.png);
@@ -74,14 +75,6 @@ body{
 align-content: center;
 }
 
-#dla:hover{
-transition: 1s;	
-	 stroke: #646464;
-  stroke-width: 1px;
-  stroke-dasharray: 2,2;
-  stroke-linejoin: round;
-
-}
 
 #showreel {
 display: flex;
@@ -91,6 +84,13 @@ justify-content: center;
 
 .video{
 }
+hr{
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	height: 2px;
+    border: 0;
+	color: #14110F;
+}
+
 
 .contactform{
 	display: flex;
@@ -130,7 +130,7 @@ label{
 }
 button{
 background-color: #9D5C63;
-color:#FEF5EF;
+color: white;
 border-radius: 4px 4px 4px 4px;
 }
 
@@ -174,11 +174,8 @@ font-size: 250%;
 	
 }
 #composition{
-
 }
-#foley{
-	
-	
+#foley{	
 }
 #sound{
 		justify-content: center;
@@ -222,12 +219,12 @@ padding: 5px;
 	height: 400px;
 }
 figure{
-	box-shadow: 2px 2px 20px #584B53;
+
 	background-color: white;
 	padding: 2vw;
 	border-radius: 8px 8px 8px 8px;
 	border-style: solid;
-	border-color: #584B53;
+	border-color: #14110F;
 	border-width: 1px;
 }
 figure:hover{	
