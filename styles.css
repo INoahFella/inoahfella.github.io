@@ -16,14 +16,13 @@ body{
 	background-color: #14110F;
 	text-align: center;
 	padding: 1vw;
-
 	position: sticky;
 	top: 0; /*required for sticky property*/
 	z-index: 1;
 }
 #logo{
 	
-	width:3%;
+	width:3vw;
 	float: left;
 	 /*margin-bottom: 2vw;*/	
 }
@@ -83,6 +82,8 @@ justify-content: center;
 }
 
 .video{
+	width: 560px; 
+	height: 315px;
 }
 hr{
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
@@ -119,7 +120,6 @@ hr{
   margin: 8px 0;
   box-sizing: border-box;
 	border-radius: 4px 4px 4px 4px;
-	
 }
 label{
 	display: grid;
@@ -135,7 +135,7 @@ border-radius: 4px 4px 4px 4px;
 }
 
 .section {
-		padding: 6rem;
+		padding: 1vw;
 	text-align: center;
    color: white;
 	 text-shadow: 2px 2px #000000;	
@@ -150,14 +150,11 @@ font-size: 250%;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 50rem;
-		align-content: center;
-	justify-content: center;
-}
-#audio {	/* this covers the whole audio section, ie: master branch */ 
-
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
 
+#audio {	/* this covers the whole audio section, ie: master branch */ 
 }
 #music{
 	justify-content: center;
@@ -229,83 +226,104 @@ figure{
 }
 figure:hover{	
 }
-
+                                           /*small screens: tablets etc */
 @media screen and (max-width: 600px) {
-
-	body main{
-	max-width: 100vw;
-	margin-left: 0;
-	margin-right: 0;
-	}}
-	/*Mobile*/
-@media screen and (max-width: 400px) {
-main{
-	padding: 25px;
-}
-	#intro{
-	background-image: url(images/mehighres.png);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	padding: 20px;
-	margin-top: 2vw;
-	height: 25vw
+	#logo{
+	display: none;	
 	}
-	#intro p{
+	#intro{
 		display: none;
+	}
+	body{
+	max-width: 100vw;
 	
 	}
-/*wrapper{
-	box-sizing: border-box;
-	width: 100vw;
-	display: flex;
-	margin-bottom: 2vw;
-	height: auto;
-	box-shadow: 0px 10px 8px #584B53;
-}*/
-
-main img{
-	border-radius: 6px 6px 6px 6px;
-}
-
-#nf-form-2-cont{
-	text-align: center;
-}
-
-	#menu-item-78{
-		float: right;
-	}
 #wrapper{
-	 display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-content: center;
-	padding-right: 6vw;
-	padding-left: 0vw;
-	font-size: 80%;
-	list-style-type: none;
-	height: 4rem;
-    margin-bottom: 10vw;
-}
 
-main{
-	align-content: center;
+	background-color: #14110F;
+	text-align: center;
 	justify-content: center;
-    text-align: center;
-	padding-left: 0.5rem;
-		padding-right: 0.5rem;
+	padding-left: 0vw;
+	height: 4.5rem;
+	padding-top: 7vw;
+	padding-bottom: 2vw;
+    margin-bottom: 5vw;
+	
+}
+	.section{
+		max-width: 50vw;
+	}}
+											/*MOBILE VERSION*/
+@media screen and (max-width: 400px) {
+
+	
+#logo{
+	display: none;	
 	}
 
-	#gridContainer{
+#wrapper{
+	align-content: center;
+	text-align: center;
+	justify-content: center;
+	background-color: #14110F; /*#14110F;*/
+	padding-left: 0vw;
+	height: 4.5rem;
+	padding-top: 7vw;
+	padding-bottom: 2vw;
+    margin-bottom: 5vw;
+}
+	#links a{	
+
+		align-content: center;
+	text-align: center;
+		justify-content: center;
+	width:6rem;
+	font-size: 15px;
+	transition: color 0.4s;
+	transition: background-color 0.4s;/*transitions are needed on both ends in order for things to revert back to baseline smoothly */
+}
+	h1,h2,h3,h4{
+	text-align: center;	
+	font-size: 8vw;;		
+	}
+	.video{
+	width: 500px;
+	height: 255px;
+		}
+main{
+	display: flex;
 	max-width: 80vw;
 	margin-left: 10vw;
 	margin-right: 10vw;
+	padding: 25px;
+	}
+
+	#intro{
+		display: none;
+	}
+	.section{
+		padding: 0.5vw;	
+     }
+	#audioGrid{	/*make invisible for mobile, until I figure out a better way to show off audio whoops */ 
+      display: none;
+
+		}
+
+	#gridContainer{
+		max-width: 80vw;
+		/*display: flex;*/
+		padding-left: 10vw;
+		padding-right: 10vw;
+	}
+	#projects{
+    padding: 5px;
+ grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: (1, 200px);    
+    grid-column-gap: 0.01vw;
+    grid-row-gap: 0.02vw;	
 }
-#projects{
-margin-left: 2vw;
-	margin-right: 2vw;
-padding: 5px;
-	display: grid;
- grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: (2, 150px);    
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;	
+#projects img{
+	width: 250px;
+}
+
 	}}
