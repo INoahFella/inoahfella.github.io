@@ -52,15 +52,14 @@ body{
 	background-color: #7681B3;	
 }
 #intro{
-	background-image: url(images/mehighres.png);
+	background-image: url(images/gallahad.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: bottom;
+	background-position: 0px -600px;
+	background-size: cover;
 	padding: 20px;
 	margin-top: 2vw;
 	height: 25rem;
-	/*background-size: 99%;*/
-	
 }
 #end{
 	margin-top: 4vw;
@@ -94,7 +93,7 @@ hr{
 
 
 .contactform{
-	display: flex;
+	
     justify-content: center;
 	text-align: center;
 	margin-bottom: 5rem;	
@@ -146,12 +145,13 @@ font-size: 250%;
 	
 }
 #audioGrid{
+	align-content: center;
 	background-image: url(images/audiobackground.png);
 	background-size: cover;
 	background-attachment: fixed;
 	height: 50rem;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 }
 
 #audio {	/* this covers the whole audio section, ie: master branch */ 
@@ -160,13 +160,8 @@ font-size: 250%;
 	justify-content: center;
 	align-content: center;
     margin: 1vw;
-	width:800px;
-    height:200px;
-	display: grid;
-	grid-template-columns: 300px 300px;
-	grid-row: auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+	
+
 
 	
 }
@@ -175,21 +170,13 @@ font-size: 250%;
 #foley{	
 }
 #sound{
-		justify-content: center;
+	justify-content: center;
 	align-content: center;
     margin: 1vw;
-	width:800px;
-    height:200px;
-	display: grid;
-	grid-template-columns: 300px 300px;
-	grid-row: auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-	float: left;
 }
 
 #anim{
-	background-image: url(images/gallahad.png");
+	
 	background-attachment: fixed;
 }
 #gridContainer{
@@ -227,7 +214,7 @@ figure{
 figure:hover{	
 }
                                            /*small screens: tablets etc */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 	#logo{
 	display: none;	
 	}
@@ -244,11 +231,22 @@ figure:hover{
 	text-align: center;
 	justify-content: center;
 	padding-left: 0vw;
+	padding-right: 
 	height: 4.5rem;
 	padding-top: 7vw;
-	padding-bottom: 2vw;
+	padding-bottom: 3vw;
     margin-bottom: 5vw;
 	
+}
+		#links a{	
+
+		align-content: center;
+	text-align: center;
+		justify-content: center;
+	width:6rem;
+	font-size: 15px;
+	transition: color 0.4s;
+	transition: background-color 0.4s;/*transitions are needed on both ends in order for things to revert back to baseline smoothly */
 }
 	.section{
 		max-width: 50vw;
