@@ -213,6 +213,16 @@ figure{
 }
 figure:hover{	
 }
+@media screen and (min-width: 2800px) {
+
+	
+#logo{
+	width:2vw;
+	}
+	#wrapper{
+	height: 5vh;
+		justify-content: center;
+	}}
                                            /*small screens: tablets etc */
 @media screen and (max-width: 500px) {
 	#logo{
@@ -231,7 +241,7 @@ figure:hover{
 	text-align: center;
 	justify-content: center;
 	padding-left: 0vw;
-	padding-right: 
+	padding-right: 0vw;
 	height: 4.5rem;
 	padding-top: 7vw;
 	padding-bottom: 3vw;
@@ -253,12 +263,9 @@ figure:hover{
 	}}
 											/*MOBILE VERSION*/
 @media screen and (max-width: 400px) {
-
-	
 #logo{
 	display: none;	
 	}
-
 #wrapper{
 	align-content: center;
 	text-align: center;
@@ -324,4 +331,4 @@ main{
 	width: 250px;
 }
 
-	}}
+	}
