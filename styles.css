@@ -137,6 +137,8 @@ border-radius: 4px 4px 4px 4px;
 		padding: 1vw;
 	text-align: center;
    color: white;
+	padding-left: 8vw;
+	padding-right: 8vw;
 	 text-shadow: 2px 2px #000000;	
 }
 h1,h2,h3,h4{
@@ -214,14 +216,24 @@ figure{
 figure:hover{	
 }
 @media screen and (min-width: 2800px) {
-
-	
+	.section p{
+	     padding-left: 25vw;
+		 padding-right: 25vw;
+		text-align: center;
+	}
 #logo{
 	width:2vw;
 	}
 	#wrapper{
 	height: 5vh;
 		justify-content: center;
+	}}
+@media screen and (min-width: 2000px) {
+
+	.section p{
+	     padding-left: 15vw;
+		 padding-right: 15vw;
+		text-align: center;
 	}}
                                            /*small screens: tablets etc */
 @media screen and (max-width: 500px) {
