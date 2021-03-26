@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 *{
 	/* make logo color 7BE773, 5386E4 for branding*/ 
-font-family: 'Open Sans', sans-serif;
+font-family: 'Rajdhani', sans-serif;
   box-sizing: border-box;
 }
 html {
@@ -72,6 +72,7 @@ body{
 	align-self: center;
 	align-content: center;
 	text-align: center;
+	margin-bottom: 5rem;
 	
 }
 strong{
@@ -84,13 +85,13 @@ strong{
 	padding: 3rem;
 }
 h2{
-	padding:1rem;
+	padding:.5rem;
 }
 hr{
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 .skill{
-	padding: 1rem;
+	padding: 1.5rem;
 }
 .skill p{
 	max-width: 40%;
@@ -100,6 +101,11 @@ hr{
 	background-size: cover;
 }
 /*Skill backgrounds for services*/
+#compose{
+	background-image: url("Content/images/guitar.png");
+	background-size: cover;
+	background-position: 40%, 40%;
+}
 #trans{
 background-image: url("Content/images/sheetBackground.png");
 background-size: cover; 
@@ -153,7 +159,7 @@ a:before, a:after{
 }
 
 .wrapper a:after{
-  content:attr(data-title);
+  content:attr(title);
   text-transform:uppercase;
   top:calc(50% - 0.5em);
   font-size:22px;
@@ -173,16 +179,18 @@ a:before, a:after{
 }
 #bttn {
     color: #fff;
-    background: #6D58FF;
-   height: 41px;
-    width: 160px;
+    background: #5386E4;
+	border-radius: 3px;
+	position: relative;
+   height: 42px;
+    width: 132px;
     icon: #fff;
     padding: 0;
     cursor: pointer;
     text-align: center;
-    position: relative;
-    border: none;
     outline: none;
+	border: none;
+    
  
 
     }
@@ -193,10 +201,9 @@ footer{
 
                                      /*RESPONSIVE CSS*/
 
-
-/* copied and pasted from shangri la, change accordingly */
 @media screen and (min-width: 1500px) {
-#introduction{
+
+	#introduction{
 
 
 		margin: auto;
@@ -207,7 +214,7 @@ footer{
 	max-height: 50rem;
 }
 	audio{
-		width: 50%;
+		width: 40%;
 	}
 }
 @media (max-width:900px){
@@ -259,7 +266,7 @@ footer{
 	}
 	.skill{
 		max-width: none;
-		padding: 0px;
+		padding: 0.2rem;
 		font-size: 0.9rem;
 		background-size: 0px;
 	}
@@ -274,15 +281,16 @@ background-size: 0px;
 	#foley{
 	background-size: 0px;
 	}	
+	#compose{
+	background-size: 0px;
+	}
 	#edit{
 	background-size: 0px;
 	}
 	#services{
 	background-size: 0px;
 	}
-	#qualifications{
-	background-size: 0px;
-	}
+	
 	audio{
 		width: 40%;
 	}
