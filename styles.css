@@ -12,7 +12,7 @@ html {
 body{
 	color: #FFFFFF;
 	margin: 0 auto;
-	background-color: #090A0C;
+	background-color: #090a0c;
 	 overflow-x: hidden;
 
 }
@@ -113,9 +113,16 @@ background-size: cover;
 #edit{
 	background-image: url("Content/images/audiobackground.png");
 }
+#gradient{
+	text-align: center;
+background: rgb(9,10,12);
+background: linear-gradient(0deg, rgba(9,10,12,1) 16%, rgba(9,10,12,0.835171568627451) 41%, rgba(9,10,12,0.6587009803921569) 56%, rgba(9,10,12,0) 100%);
+}
 #services{
+    background-color: #090a0c;
 	text-align: center;
 }
+
 #qualifications{
 	text-align: center;
 }
