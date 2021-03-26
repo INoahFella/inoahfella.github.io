@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Noah dashney</title>
 	<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
@@ -22,9 +23,9 @@
 	
 	<div id="introduction">
 		
-		<div id="stuff"><p><strong>M</strong>y name is Noah Dashney. I am a sound designer and video game composer</p>
+		<div id="stuff"><p><strong>M</strong>y name is Noah Dashney. I am a sound designer and composer.</p>
 		
-		<p>I love to create unique and memorable pieces of music for games that capture the correct mood.</p>
+		<p id="extra">I love to create unique and memorable pieces of music for games and other media that capture the correct mood.</p>
 		<p>I've been working in audio for all forms of media for years, and am always looking for another opportunity to bring your ideas to the next level.</p>
 			
 			
@@ -33,7 +34,7 @@
 		<hr>
 		<h3>Contact me</h3>
 		<p>Email: noah.dashney@edu.sait.ca</p>
-			<p><a href="www.linkedin.com/in/noah-dashney">Linkedin</a></p>
+			<a href="https://www.linkedin.com/in/noah-dashney-55b24b19b/" id="linkedin" target="_blank">Linkedin</a>
 			<!--<img src="Content/images/avatar.jpg" alt="me" id="portrait">-->
 			</div>
 		
@@ -42,43 +43,46 @@
 	</div>
 	<div id="services">
 		<h2>Services</h2>
+		<p>How can I help you?</p>
 	
-	<div id="game" class="skill"><p><h5>Game Audio:</h5>Game audio is an all-encompassing term for responsive sound, atmospheric audio, and even music. All the important components of a memorable piece of media.</p>
+	<div id="game" class="skill"><p><h4>Game Audio:</h4>Game audio is an all-encompassing term for responsive sound, atmospheric audio, and even music. All the important components to take your game immersion to the next level.</p>
 	<audio controls>
   <source src="Content/audio/FoleyDungeon.wav">
 Your browser does not support the audio element.
 </audio>
+		
 	</div>
 	
-	<div id="edit" class="skill"><p><h5>Music Editing:</h5> I offer mixing and mastering of your already completed pieces of audio. Compression, equalization, limiting, whatever you require!</p>
+	<div id="edit" class="skill"><p><h4>Music Editing:</h4> I offer mixing and mastering of your already completed pieces of audio. Compression, equalization, limiting, whatever you require!</p>
 		<audio controls>
-  <source src="*">
+  <source src="Content/audio/edm.mp3">
 Your browser does not support the audio element.
 </audio></div>
 	
-	<div id="foley" class="skill"><p><h5>Foley Audio:</h5> Foley audio is any miscellaneous sound effects for media, things like ambient audio, footsteps, etc.</p>
+	<div id="foley" class="skill"><p><h4>Foley Audio:</h4> Foley audio is any miscellaneous sound effects for media, things like ambient audio, footsteps, etc.</p>
 		<audio controls>
   <source src="Content/audio/WesternFoley.wav">
 Your browser does not support the audio element.
 </audio></div>
 		
-	<div id="compose" class="skill"><p><h5>Composing:</h5> Establishing a mood for your media is a crucial component of whether it will resonate with your audience. I'm here to make sure the right tone is established.</p>
+	<div id="compose" class="skill"><p><h4>Composing:</h4> Establishing a mood for your media is a crucial component of whether it will resonate with your audience. I'm here to make sure the right tone is established.</p>
 	<audio controls>
-  <source src="Content/audio/themetest.wav">
+  <source src="Content/audio/themetest.wav"> 
 Your browser does not support the audio element.
 </audio></div>
 	
-	<div id="trans" class="skill"><p><h5>Music Transcription:</h5>Need sheet music for a tune but can't seem to find any around? I offer transcriptions of any piece of music for your learning needs.</p>
-	<audio controls>
+	<div id="trans" class="skill"><p><h4>Music Transcription:</h4>Need sheet music for a tune but can't seem to find any around? I offer transcriptions of any piece of music for your learning needs.</p>
+	<!--<audio controls>
   <source src="*">
 Your browser does not support the audio element.
-</audio></div>
+</audio>--></div>
 		</div>
 
-	<hr>
+
 	<div id="work">
 	
 		<h1>Works</h1>
+		<p>A collection of projects, new and old!</p>
 	<div id="portfolio" class="wrapper">
   <a href="https://dumbluckarts.itch.io/ying-and-ging" data-title="Ying &amp; Ging"  target="_blank">
     <img src="Content/images/ying.png" alt="ying &amp; ging"/>
@@ -86,22 +90,22 @@ Your browser does not support the audio element.
   <a href="https://www.instagram.com/p/CMnPHrRH--8/?utm_source=ig_web_copy_link" data-title="Lontra Advertisement" target="_blank">
     <img src="Content/images/Lontra.png" alt="lontra logo"/>
   </a>
-  <a href="#" data-title="Mycelia">
-    <img src="https://unsplash.imgix.net/photo-1429198739803-7db875882052?fit=crop&fm=jpg&h=1575&q=75&w=1050" alt="Mycelia (WIP)"/>
+  <a href="https://github.com/dumbluckarts/dungeon-boi" target="_blank" data-title="Mycelia">
+    <img src="Content/images/attacc.png" alt="Mycelia (WIP)"/>
   </a>
   <a href="#" data-title="Project 4">
     <img src="Content/images/comingSoon.png" alt="Coming Soon"/>
   </a>
-  <a href="#" data-title="Coming Soon">
+  <a data-title="Coming Soon">
     <img src="Content/images/comingSoon.png" alt="Coming Soon"/>
   </a>
-  <a href="#" data-title="Coming Soon">
+  <a  data-title="Coming Soon">
     <img src="Content/images/comingSoon.png" alt="Coming Soon"/>
   </a>
-  <a href="#" data-title="Coming Soon">
+  <a data-title="Coming Soon">
     <img src="Content/images/comingSoon.png" alt="Coming Soon"/>
   </a>
-  <a href="#" data-title="Coming Soon">
+  <a data-title="Coming Soon">
     <img src="Content/images/comingSoon.png" alt="Coming Soon"/>
   </a>
 </div>
@@ -118,7 +122,37 @@ Your browser does not support the audio element.
 	</div>
 	<hr>
 	<footer>
-	
+		<div id="contact">
+<div class="container my-5 mt-5 mx-5 px-5">
+    <h2 class="title is-2 is-capitalized">Contact Me</h2>
+    <form action="" method="post">
+        <div class="field">
+            <label for="name" class="label is-size-4 has-text-weight-light"></label>
+            <div class="control has-icons-left">
+                <input type="text" name="name" id="name" class="input" placeholder="Name" autofocus>
+                    <span class="icon is-left">
+                        <i class="fa fa-user"></i>
+                    </span>
+            </div>
+        </div>
+        <div class="field">
+            <label for="email" class="label is-size-4 has-text-weight-light"></label>
+            <div class="control has-icons-left">
+                <input type="email" name="email" id="email" class="input" placeholder="Email">
+                    <span class="icon is-left">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+            </div>
+        </div>
+        <div class="field">
+            <label for="message" class="label is-size-4 has-text-weight-light"></label>
+            <textarea name="message" id="message" rows="5" class="textarea is-medium" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="button is-success is-size-5" id="bttn">Submit</button>
+    </form>
+</div>
+	</div>	
+		
 	</footer>
 </body>
 </html>
